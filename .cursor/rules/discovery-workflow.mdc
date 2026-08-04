@@ -1,0 +1,25 @@
+---
+description: Enforce evidence-based discovery sessions and human approval gates.
+alwaysApply: true
+---
+
+# Workflow de discovery
+
+Leia `AGENTS.md` e a sessão ativa antes de criar ou alterar artefatos de
+produto, discovery, arquitetura ou agentes.
+
+- Trate chat como contexto auxiliar, nunca como approval.
+- Preserve a separação entre `[FATO]`, `[HIPÓTESE]`, `[DECISÃO]`, `[RISCO]`,
+  `[PERGUNTA]` e evidência.
+- Não decida stack, modelo canônico, banco, provedor de IA ou arquitetura sem
+  ADR e aprovação humana.
+- Não avance uma sessão para `delivery` sem `brief.md`, `plan.md`,
+  `challenge.md` e approval em arquivo da mesma revisão.
+- Não revise, conclua ou aprove a própria entrega.
+- Ao detectar gate pendente, declare `blocked` ou mantenha a fase atual; nunca
+  reporte conclusão implícita.
+- Respeite o owner de `session.yaml`, as allowlists de tasks e a matriz de
+  conflitos.
+
+Use `docs/agents/workflow.md` para fases e transições e
+`docs/agents/artifact-contracts.md` para conteúdo obrigatório de cada arquivo.

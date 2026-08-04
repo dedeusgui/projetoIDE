@@ -1,0 +1,38 @@
+schemaVersion: "1.0"
+sessionId: "2026-08-04-discovery-foundation"
+track: "discovery"
+phase: "brief"
+revision: 0
+objective: "Escolher uma primeira pergunta de discovery e definir o pacote necessário para aprovação humana."
+baseline:
+  - "../../../product/manifesto.md"
+  - "../../../product/product-context.md"
+  - "../../../discovery/research-backlog.md"
+  - "../../../discovery/validation-plan.md"
+owners:
+  orchestrator: "bootstrap-orchestrator"
+  challenger: "unassigned"
+  approver: "human-unassigned"
+  reviewer: "unassigned"
+  concluder: "unassigned"
+pendingTasks:
+  - "D-001: humano escolhe a pergunta P0 para a primeira sessão de research"
+  - "D-002: Orchestrator cria plan.md após a decisão humana de D-001"
+  - "D-003: Challenger cria challenge.md para o plano da mesma revisão"
+  - "D-004: humano cria approval após challenge com veredito pass"
+  - "D-005: owner autorizado executa delivery após D-004"
+  - "D-006: Reviewer cria reviews/review.md após D-005"
+  - "D-007: Concluder cria conclusion.md e propõe estado final após D-006"
+approvals: []
+evidence:
+  - "../../../product/manifesto.md"
+  - "../../../product/product-context.md"
+risks:
+  - "Não há segmento de usuário validado."
+  - "Não há approval para executar um experimento."
+verificationProfile:
+  - "artifact-links"
+  - "session-state-consistency"
+humanGates: []
+updatedAt: "2026-08-04"
+updatedBy: "bootstrap-orchestrator"

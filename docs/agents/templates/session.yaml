@@ -1,0 +1,33 @@
+schemaVersion: "1.0"
+sessionId: "YYYY-MM-DD-short-description"
+track: "discovery"
+phase: "brief"
+revision: 0
+objective: ""
+baseline:
+  - ""
+owners:
+  orchestrator: ""
+  challenger: ""
+  approver: ""
+  reviewer: ""
+  concluder: ""
+pendingTasks: []
+approvals: []
+evidence: []
+risks: []
+verificationProfile:
+  - "artifact-links"
+  - "session-state-consistency"
+humanGates:
+  - id: ""
+    sourceApproval: ""
+    sourceRevision: 0
+    approvalConditionId: ""
+    condition: ""
+    owner: ""
+    evaluationPhase: ""
+    status: "pending"
+    resolutionEvidence: ""
+updatedAt: "YYYY-MM-DD"
+updatedBy: ""
