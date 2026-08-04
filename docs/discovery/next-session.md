@@ -54,6 +54,11 @@ Não iniciar POC, canvas, exportação de Spec, geração de código, integraç�
 LLM ou definição de modelo semântico nesta sessão. Esses itens dependem da
 evidência de problema, público e custo de modelagem.
 
+O novo [dossiê de produto e direção técnica](../product/product-specification.md)
+serve como contexto para formular perguntas, não como autorização para antecipar
+essas capacidades. Stack, System Representation canônica, plugins e IA
+permanecem propostas até as validações correspondentes.
+
 ## Saída esperada
 
 Uma conclusion revisada que:

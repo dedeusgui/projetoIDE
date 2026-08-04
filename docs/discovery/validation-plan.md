@@ -117,12 +117,57 @@ críticas ou cresce para uma linguagem difícil de aprender.
 
 **Decisão desbloqueada:** escopo, ou não, da POC técnica.
 
+## EXP-005 — Compreensão de terminologia e projeções
+
+**Hipóteses investigadas:** um termo e um conjunto de projeções explicam a
+proposta sem serem confundidos com UML, IDE, low-code ou gerador de código;
+RQ-012 e RQ-014.
+
+**Método:** apresentar a mesma representação em descrições, lista e visualização
+candidatas, alternando os nomes `System Representation`, LSR, SKM e CSM. Pedir
+que pessoas do segmento expliquem o que acreditam que o produto preserva, o que
+ele não faz e que tarefa tentariam realizar primeiro.
+
+**Evidência esperada:** respostas sem explicação prévia do termo, confusões
+observadas, preferência justificada e lacunas de compreensão.
+
+**Sinal de apoio:** participantes distinguem representação de diagrama e código,
+e reconhecem que views são projeções do mesmo conhecimento.
+
+**Sinal de invalidação:** o termo induz expectativa de UML, IDE, geração
+automática ou ferramenta low-code; ou nenhuma projeção demonstra vantagem
+compreensível.
+
+**Decisão desbloqueada:** manter, revisar ou substituir o termo provisório e
+selecionar a menor projeção de UX para investigar.
+
+## EXP-006 — Requisitos de plataforma
+
+**Hipóteses investigadas:** desktop/local-first, canvas, editor textual e
+extensibilidade respondem a necessidades concretas do segmento; RQ-013, RQ-014
+e RQ-015.
+
+**Método:** depois de validar problema e fluxo de modelagem, apresentar
+protótipos ou cenários de uso equivalentes e registrar requisitos de offline,
+privacidade, arquivo local, desempenho, visualização e integração.
+
+**Sinal de apoio:** necessidades observáveis tornam uma direção de plataforma
+claramente mais adequada que alternativas menores.
+
+**Sinal de invalidação:** as preferências são abstratas, sem ligação com
+episódios reais, ou podem ser atendidas sem as camadas propostas.
+
+**Decisão desbloqueada:** abrir ou não uma sessão de arquitetura para comparar
+runtime, persistência, canvas e extensibilidade.
+
 ## Sequência sugerida
 
 1. EXP-001 para confirmar segmento e problema.
 2. EXP-002 para testar custo e valor de modelar.
 3. EXP-003 para testar a promessa ligada a IA.
 4. EXP-004 somente se os sinais anteriores justificarem uma POC de modelo.
+5. EXP-005 para testar linguagem e projeções com o segmento validado.
+6. EXP-006 para avaliar a menor direção técnica que atende necessidades reais.
 
 Nenhum experimento autoriza iniciar o MVP sozinho. A passagem para POC exige
 uma decisão humana registrada que explique quais hipóteses receberam evidência

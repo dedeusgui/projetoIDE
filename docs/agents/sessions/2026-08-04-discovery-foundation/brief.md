@@ -2,75 +2,84 @@
 
 ## Identificação
 
-- Revisão: `0`
-- Owner: `Orchestrator` ainda não designado
-- Trilha proposta: `discovery`
+- Revisão: `1`
+- Owner: `bootstrap-orchestrator`
+- Trilha: `discovery`
 - Fontes de entrada:
   - [`manifesto`](../../../product/manifesto.md)
   - [`contexto de produto`](../../../product/product-context.md)
   - [`backlog de research`](../../../discovery/research-backlog.md)
-  - [`plano de validação`](../../../discovery/validation-plan.md)
+  - [`brainstorming técnico e de produto`](../../../discovery/inputs/2026-08-04-product-and-technical-brainstorm.md)
 
 ## Objetivo
 
-Escolher uma pergunta P0 que reduza uma incerteza material sobre o problema e
-preparar um plano de discovery para aprovação humana. Esta sessão não executa o
-experimento nem assume uma resposta.
+Preservar o brainstorming atual e transformá-lo em especificação, capabilities,
+backlog, fluxos, direção técnica e modelo conceitual candidatos. O resultado
+deve dar continuidade ao discovery sem converter escolhas de produto ou
+tecnologia em decisões aceitas.
 
 ## Contexto
 
-O produto propõe uma representação viva de software que preserve conhecimento
+O projeto propõe uma representação viva de software que preserve conhecimento
 de domínio, arquitetura, comportamentos, decisões e relações para pessoas e
-agentes. A hipótese principal afirma que modelagem prévia melhora a qualidade do
-software e o contexto oferecido a agentes de IA, mas público, problema e custo
-da modelagem ainda não foram validados.
+agentes. O product owner trouxe uma direção técnica extensa, fluxos conceituais,
+fronteiras e um pedido de especificação rica e revisável para orientar o
+desenvolvimento com validação humana contínua.
 
 ## Classificação
 
 ### [FATO]
 
-- O repositório está em discovery e não contém uma implementação do produto.
+- O repositório está em discovery e não contém implementação do produto.
 - Não há stack, modelo canônico, banco, provedor de IA ou arquitetura técnica
   aceitos.
-- O manifesto define que o modelo deve permanecer independente do código.
+- O manifesto define que a representação deve permanecer independente do código.
 
 ### [HIPÓTESE]
 
-- Existe um segmento para o qual reconstruir contexto arquitetural gera custo
-  frequente e percebido.
-- Uma modelagem viva pode compensar o esforço adicional de criá-la.
-- Uma Spec estruturada pode melhorar a atuação de LLMs em uma tarefa real.
+- Modelar um sistema novo e derivar contexto estruturado para agentes pode ser
+  a experiência principal capaz de validar a proposta de valor.
+- Desktop local-first, canvas, extensibilidade e IA agnóstica podem ser meios
+  adequados para a POC, mas ainda precisam de requisitos e evidências.
+- Um vocabulário semântico pequeno pode representar sistemas sem reproduzir UML
+  cerimonial.
 
 ### [DECISÃO]
 
-- A primeira pergunta P0, o segmento inicial e o método ainda exigem decisão
-  humana.
+- `System Representation` será o termo provisório; LSR, SKM e CSM permanecem
+  candidatos de pesquisa.
+- A direção técnica será registrada como dossiê de discovery, e não como
+  arquitetura adotada.
+- A especificação usará “modelar um sistema novo do zero e derivar contexto
+  estruturado para agentes” como experiência norteadora a validar.
 
 ### [RISCO]
 
-- Começar pela solução ou formato de modelo antes de confirmar o problema.
-- Medir preferência declarada em vez de comportamento real.
-- Interpretar uma resposta de LLM sem rubrica e baseline como evidência.
+- Tratar brainstorming como requisito aceito e criar escopo de IDE, Git,
+  CI/CD, cloud ou low-code.
+- Fixar stack ou schema antes de validar problema, público e custo de modelagem.
+- Confundir fluxos futuros com capacidade de POC ou MVP.
 
 ### [PERGUNTA]
 
-- Qual pergunta P0 deve ser investigada primeiro: segmento, custo do problema,
-  aceitação de modelagem ou contexto para IA?
+- Quais partes da direção proposta são necessárias para validar o problema e
+  quais devem ficar fora da primeira POC?
 
 ## Limites
 
-- Inclui: seleção da primeira pergunta e preparação de plano para approval.
+- Inclui: documentação de contexto, síntese de produto, UX candidata, backlog,
+  direção técnica proposta, gaps e modelo conceitual candidato.
 - Não inclui: entrevistas, protótipo, POC, escolha de stack, definição de
-  modelo canônico ou implementação.
+  modelo canônico, SDK, integração com IA ou implementação.
 
 ## Resultado e evidência esperados
 
-Uma escolha humana registrada de uma pergunta P0, acompanhada de um plano que
-define método, participantes ou material, evidência e sinais de apoio ou
-invalidação.
+Um conjunto de documentos vinculados ao brainstorming que permita a uma pessoa
+independente identificar proposta, hipótese, lacuna, fase, dependência e gate
+humano de cada capacidade relevante.
 
 ## Handoff
 
-- Próximo papel: humano responsável pela direção de produto.
-- Condição de avanço: selecionar uma pergunta P0; o `Orchestrator` então
-  prepara `plan.md`, submete ao `Challenger` e solicita approval em arquivo.
+- Próximo papel: `Challenger`.
+- Condição de avanço: `plan.md` da revisão `1` precisa definir artefatos,
+  fronteiras e critérios de não-decisão.

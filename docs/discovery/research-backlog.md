@@ -108,3 +108,35 @@ Verificar expectativas sobre arquivos locais, repositório, histórico,
 compartilhamento, permissões e abertura do formato.
 
 **Decisão desbloqueada:** direção de produto para dados e colaboração após MVP.
+
+## P2 — identidade e direção técnica
+
+### RQ-012 — Qual nome explica o conceito sem reduzir o produto a diagrama?
+
+Comparar `System Representation`, LSR, SKM e CSM em clareza, neutralidade de
+paradigma, associação com UML e capacidade de acomodar múltiplas projeções.
+
+**Decisão desbloqueada:** termo oficial de produto e a promoção, ou não, de um
+futuro `SYSTEM_MODEL.md`.
+
+### RQ-013 — Que requisitos justificam uma aplicação desktop local-first?
+
+Investigar necessidades reais de offline, privacidade, filesystem, desempenho,
+portabilidade e distribuição do primeiro segmento antes de escolher runtime ou
+camada nativa.
+
+**Decisão desbloqueada:** experimento técnico comparando opções de runtime.
+
+### RQ-014 — Que projeções de UX ajudam a criar uma representação?
+
+Avaliar o valor de explorer, canvas, inspector e feedback de validação em
+comparação com fluxos textuais ou listas sobre o mesmo conhecimento.
+
+**Decisão desbloqueada:** menor superfície de experiência para uma POC ou MVP.
+
+### RQ-015 — O que precisa ser extensível desde o início?
+
+Identificar casos concretos para linguagens, frameworks, visualizações,
+providers e validações antes de definir Core, plugins ou SDK.
+
+**Decisão desbloqueada:** fronteira inicial entre Core e extensibilidade.

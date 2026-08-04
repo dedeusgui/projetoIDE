@@ -97,3 +97,17 @@ Ainda não há decisão sobre stack, banco de dados, formato de arquivo, grafo,
 modelo canônico, editor visual, provedor de IA, licença operacional ou
 infraestrutura. Qualquer proposta nesses temas precisa ser sustentada por uma
 pergunta de discovery, uma experimentação ou um ADR aprovado.
+
+## Direções documentadas, ainda não adotadas
+
+O brainstorming atual foi organizado como dossiê de discovery:
+
+- [especificação de produto](product-specification.md);
+- [capabilities candidatas](capability-map.md);
+- [experiências e telas candidatas](experience-map.md);
+- [direção técnica proposta](../discovery/technical-context.md);
+- [conceito provisório de System Representation](../discovery/system-representation-concept.md);
+- [modelo conceitual candidato](../discovery/system-model-candidate.md).
+
+Esses documentos ampliam contexto para pessoas e agentes, mas não alteram as
+restrições desta seção nem autorizam uma POC ou implementação.

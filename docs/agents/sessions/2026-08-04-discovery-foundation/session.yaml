@@ -1,38 +1,46 @@
 schemaVersion: "1.0"
 sessionId: "2026-08-04-discovery-foundation"
 track: "discovery"
-phase: "brief"
-revision: 0
-objective: "Escolher uma primeira pergunta de discovery e definir o pacote necessário para aprovação humana."
+phase: "concluded"
+revision: 1
+objective: "Transformar o brainstorming em base documental de produto e discovery sem fixar arquitetura ou modelo canônico."
 baseline:
   - "../../../product/manifesto.md"
   - "../../../product/product-context.md"
   - "../../../discovery/research-backlog.md"
   - "../../../discovery/validation-plan.md"
+  - "../../../discovery/inputs/2026-08-04-product-and-technical-brainstorm.md"
 owners:
   orchestrator: "bootstrap-orchestrator"
-  challenger: "unassigned"
-  approver: "human-unassigned"
-  reviewer: "unassigned"
-  concluder: "unassigned"
-pendingTasks:
-  - "D-001: humano escolhe a pergunta P0 para a primeira sessão de research"
-  - "D-002: Orchestrator cria plan.md após a decisão humana de D-001"
-  - "D-003: Challenger cria challenge.md para o plano da mesma revisão"
-  - "D-004: humano cria approval após challenge com veredito pass"
-  - "D-005: owner autorizado executa delivery após D-004"
-  - "D-006: Reviewer cria reviews/review.md após D-005"
-  - "D-007: Concluder cria conclusion.md e propõe estado final após D-006"
-approvals: []
+  challenger: "documentary-challenger"
+  approver: "product-owner"
+  reviewer: "documentation-reviewer"
+  concluder: "documentation-concluder"
+pendingTasks: []
+approvals:
+  - "approvals/approval-001-product-specification-foundation.md"
 evidence:
   - "../../../product/manifesto.md"
   - "../../../product/product-context.md"
+  - "../../../discovery/inputs/2026-08-04-product-and-technical-brainstorm.md"
+  - "reviews/review.md"
+  - "conclusion.md"
 risks:
   - "Não há segmento de usuário validado."
-  - "Não há approval para executar um experimento."
+  - "A direção técnica pode ser confundida com arquitetura adotada."
 verificationProfile:
   - "artifact-links"
   - "session-state-consistency"
-humanGates: []
+  - "proposal-status-classification"
+humanGates:
+  - id: "HG-001"
+    sourceApproval: "approvals/approval-001-product-specification-foundation.md"
+    sourceRevision: 1
+    approvalConditionId: "COND-001"
+    condition: "Preservar status de discovery para toda proposta documentada."
+    owner: "documentation-reviewer"
+    evaluationPhase: "review"
+    status: "resolved"
+    resolutionEvidence: "reviews/review.md"
 updatedAt: "2026-08-04"
 updatedBy: "bootstrap-orchestrator"

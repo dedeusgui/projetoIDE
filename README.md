@@ -26,6 +26,16 @@ decisão ou alteração.
   priorizadas que precisam de evidência.
 - [Plano de validação](docs/discovery/validation-plan.md): experimentos e sinais
   de decisão para as hipóteses atuais.
+- [Especificação de produto](docs/product/product-specification.md): hipótese,
+  experiência norteadora e critérios de avanço.
+- [Mapa de capabilities](docs/product/capability-map.md): recorte de discovery,
+  POC, MVP e pesquisa futura.
+- [Mapa de experiências](docs/product/experience-map.md): jornadas e telas
+  candidatas a validar.
+- [Contexto técnico proposto](docs/discovery/technical-context.md): tecnologias,
+  fluxos e limites ainda sob avaliação.
+- [System Representation](docs/discovery/system-representation-concept.md):
+  termo provisório e pesquisa de nomenclatura.
 - [ADR-0001](docs/architecture/adr/ADR-0001-governanca-de-conhecimento-e-decisoes.md):
   como decisões e conhecimento serão versionados.
 - [Workflow de agentes](docs/agents/workflow.md): papéis, fases, gates e
