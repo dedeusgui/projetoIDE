@@ -116,12 +116,38 @@ comparação de candidatos e avaliação de neutralidade de paradigma.
 
 ## G-010 — Fronteira entre representação e código
 
-**Status:** aberto, pós-POC.
+**Status:** aberto, crítico para a visão (elevado na 0.5).
 
 **Premissa em risco:** a representação pode permanecer fonte de verdade sem
 sincronização bidirecional prematura ou reconstrução manual inviável.
 
-**Evidência necessária:** protótipos e mudanças controladas em que a
-proveniência de uma projeção seja preservada.
+**Evidência necessária:** escolha explícita entre modos spec-first /
+spec-anchored / spec-as-source; protótipos e mudanças controladas com
+proveniência.
 
-**Destino:** RQ-008, RQ-009 e pesquisa futura de sincronização.
+**Destino:** Q-LOOP-* em `open-questions-vision-0.5.md`; RQ-008/RQ-009;
+pesquisa SDD em `research-notes-vision-0.5.md`.
+
+## G-011 — Autoridade e drift após implementação por agente
+
+**Status:** aberto, crítico para a visão.
+
+**Premissa em risco:** “modelar → agente implementa” continua útil depois da
+primeira geração, quando humanos editam código ou o agente erra.
+
+**Evidência necessária:** política de produto debatida + cenários de revisão;
+depois experimento com usuários do segmento.
+
+**Destino:** visão 0.5; Q-LOOP-001/002; EXP futuros.
+
+## G-012 — Colaboração multi-dev / branches com grafo semântico
+
+**Status:** aberto.
+
+**Premissa em risco:** vários desenvolvedores em branches diferentes conseguem
+usar a representação sem merge inviável ou dual source of truth.
+
+**Evidência necessária:** modelo de versionamento da representação; comparação
+com docs-as-code / SDD em monorepo.
+
+**Destino:** Q-COLLAB-001/002.

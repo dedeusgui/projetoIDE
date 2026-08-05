@@ -2,23 +2,34 @@
 
 ## Status
 
-Hipóteses de UX para validar a experiência norteadora. Não definem layout,
-componentes visuais, biblioteca ou comportamento implementado.
+**Prematuro para a visão 0.5.** Hipóteses de UX antigas; **não guiam** o
+trabalho atual. O product owner pediu explicitamente não sugerir telas antes
+do core de modelagem e da visão estarem claros.
 
-## Jornada principal candidata
+Norte atual: [`vision-0.5.md`](vision-0.5.md).  
+Core: [`../discovery/modeling-core-0.5.md`](../discovery/modeling-core-0.5.md).
 
-```mermaid
-flowchart TD
-    createProject[CriarProjeto] --> establishScope[DefinirEscopoInicial]
-    establishScope --> modelSystem[RepresentarSistema]
-    modelSystem --> inspectMeaning[InspecionarSignificado]
-    inspectMeaning --> validateRepresentation[ValidarRepresentacao]
-    validateRepresentation --> refineModel[RefinarRepresentacao]
-    refineModel --> exportContext[ExportarContexto]
+O conteúdo abaixo permanece só como arquivo histórico de brainstorming. Não
+define layout, componentes, biblioteca nem compromisso de produto.
+
+## Jornada de valor (sem UI) — alinhada à visão 0.5
+
+```text
+Modelar representação
+→ revisar lacunas
+→ pedir implementação ao agente
+→ revisar saída
+→ (aberto) reconciliar modelo ↔ código
 ```
 
-O fluxo não é linear na prática: a pessoa pode voltar do export ou da validação
-para refinar a representação. A intenção é tornar esse ciclo visível.
+Forma de UI (canvas, chat, botão, editor) = pergunta aberta, não tela candidata.
+
+---
+
+## Arquivo histórico (brainstorm anterior)
+
+As seções “tela candidata” a seguir **não devem ser usadas** como backlog de
+UX até nova sessão de experiência aprovada.
 
 ## Tela candidata: criação ou abertura de projeto
 

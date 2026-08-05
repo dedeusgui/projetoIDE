@@ -24,17 +24,19 @@ hipótese de problema que o discovery precisa investigar.
 
 ## Hipótese principal
 
-> Desenvolvedores conseguem produzir software de maior qualidade quando modelam
-> o sistema antes da implementação e utilizam essa modelagem como contexto para
-> agentes de IA.
+> Desenvolvedores produzem software de maior qualidade quando modelam o sistema
+> numa representação viva e usam essa representação para o agente implementar —
+> em vez de depender de chat solto na IDE.
+
+Norte documental: [`vision-0.5.md`](vision-0.5.md).
 
 ## Hipóteses secundárias
 
 - Desenvolvedores aceitam manter uma modelagem viva.
 - Uma representação estruturada melhora de forma significativa o contexto
-  enviado a LLMs.
+  enviado a LLMs e a qualidade da implementação assistida.
 - A modelagem reduz retrabalho arquitetural.
-- O modelo pode permanecer sincronizado com a evolução do projeto.
+- Existe uma política viável para drift modelo ↔ código (ainda aberta).
 - O valor obtido justifica o custo de criar e manter a modelagem.
 
 Essas são hipóteses, não promessas do produto.
@@ -65,31 +67,35 @@ Não deve priorizar design refinado nem integração com agentes.
 
 ### MVP futuro
 
-Caso a POC e o discovery sustentem a hipótese, o MVP poderá focar em:
+Caso a POC e o discovery sustentem a hipótese, o MVP poderá focar em
+capacidades que sustentem a visão (modelar com clareza + caminho até o agente
+implementar), por exemplo:
 
-- criação de projetos;
-- explorer;
-- canvas de modelagem;
-- edição de propriedades;
-- relacionamentos;
+- criação de projetos e representação estruturada;
+- navegação / edição semântica (forma de UI ainda aberta — sem telas fixadas);
+- relacionamentos, regras e comportamentos;
 - persistência;
-- exportação de uma Spec.
+- projeção de contexto e/ou pedido de implementação assistida.
 
-Essa lista é uma direção de escopo, não um compromisso de implementação.
+Essa lista é direção de escopo, não compromisso. Detalhe de telas em
+[`experience-map.md`](experience-map.md) é **prematuro** até o core e o
+segmento avançarem.
 
-## Fora do MVP inicial
+## Fora do MVP inicial (fase, não visão)
 
-Para proteger a hipótese principal, ficam fora do MVP inicial:
+Para proteger aprendizado, ficam fora do **MVP inicial** (não significam
+“fora da visão de produto”):
 
 - importação automática de projetos existentes;
-- geração completa de código;
-- integração profunda com Git;
-- CI/CD;
-- agentes especializados;
-- sincronização bidirecional código-modelo;
+- geração completa sem revisão humana;
+- integração profunda com Git / CI/CD;
+- sincronização bidirecional automática código-modelo;
 - colaboração em tempo real;
 - marketplace de plugins;
-- integrações com Jira, GitHub ou análise automática de legado.
+- integrações com Jira ou análise automática de legado.
+
+Perguntas abertas (drift, branches, chat vs botão):  
+[`../discovery/open-questions-vision-0.5.md`](../discovery/open-questions-vision-0.5.md).
 
 ## Restrições de decisão
 
@@ -100,14 +106,17 @@ pergunta de discovery, uma experimentação ou um ADR aprovado.
 
 ## Direções documentadas, ainda não adotadas
 
-O brainstorming atual foi organizado como dossiê de discovery:
+Dossiê de discovery (candidatos, não decisões):
 
+- [visão 0.5](vision-0.5.md);
 - [especificação de produto](product-specification.md);
+- [core de modelagem 0.5](../discovery/modeling-core-0.5.md);
+- [perguntas abertas](../discovery/open-questions-vision-0.5.md);
+- [notas de pesquisa visão 0.5](../discovery/research-notes-vision-0.5.md);
 - [capabilities candidatas](capability-map.md);
-- [experiências e telas candidatas](experience-map.md);
+- [experiências (rascunho prematuro)](experience-map.md);
 - [direção técnica proposta](../discovery/technical-context.md);
 - [conceito provisório de System Representation](../discovery/system-representation-concept.md);
 - [modelo conceitual candidato](../discovery/system-model-candidate.md).
 
-Esses documentos ampliam contexto para pessoas e agentes, mas não alteram as
-restrições desta seção nem autorizam uma POC ou implementação.
+Esses documentos ampliam contexto, mas não autorizam POC ou implementação.

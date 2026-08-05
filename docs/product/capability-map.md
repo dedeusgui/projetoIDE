@@ -3,31 +3,43 @@
 ## Como ler
 
 Capabilities abaixo não são requisitos aceitos. Elas agrupam resultados que o
-produto pode precisar para testar a hipótese principal. O estágio indica quando
-vale investigar, não uma promessa de entrega.
+produto pode precisar. O estágio indica quando vale investigar, não promessa
+de entrega.
+
+**Visão 0.5:** modelar → agente implementa ([`vision-0.5.md`](vision-0.5.md)).
+Capabilities de “só exportar contexto” ou de empurrar agentes só para pós-MVP
+descrevem **fases candidatas**, não o limite da visão.
 
 ## Discovery
 
 ### Entendimento do problema
 
 **Resultado esperado:** identificar segmento, episódio recente, custo de
-reconstruir contexto e alternativa atual.
+reconstruir contexto e alternativa atual (incl. chat-IDE).
 
 **Depende de:** entrevistas e evidências de RQ-001/RQ-002.
 
 ### Linguagem da System Representation
 
-**Resultado esperado:** vocabulário mínimo que expresse responsabilidade, regra,
-relação, fluxo e decisão sem reduzir o sistema a diagrama.
+**Resultado esperado:** vocabulário mínimo (ver
+[`../discovery/modeling-core-0.5.md`](../discovery/modeling-core-0.5.md)).
 
 **Depende de:** RQ-005 e exemplos de sistemas distintos.
 
 ### Fluxo de modelagem
 
-**Resultado esperado:** entender por onde uma pessoa começa, como aprofunda a
-representação e em que momento encontra valor.
+**Resultado esperado:** entender por onde uma pessoa começa, como aprofunda e
+quando encontra valor — **sem fixar telas**.
 
-**Depende de:** RQ-003/RQ-006 e observação de comportamento.
+**Depende de:** RQ-003/RQ-006.
+
+### Política modelo ↔ código
+
+**Resultado esperado:** hipótese clara de autoridade/drift (Q-LOOP-* em
+[`../discovery/open-questions-vision-0.5.md`](../discovery/open-questions-vision-0.5.md)).
+
+**Depende de:** desk research (já iniciada) + debate de produto + evidência
+posterior.
 
 ## POC candidata
 
@@ -88,13 +100,17 @@ avaliação de contexto.
 
 ## Pós-MVP ou pesquisa futura
 
-- integração profunda com Git e diffs de representação;
-- importação e engenharia reversa de código;
-- geração de código e sincronização bidirecional;
+Itens abaixo podem ser **fase tardia** e ainda assim pertencer à visão:
+
+- integração com Git e diffs de representação;
+- importação / engenharia reversa de código;
+- implementação assistida por agente a partir do modelo (está na **visão 0.5**;
+  o estágio de entrega é que permanece aberto);
+- sincronização ou gates de drift modelo ↔ código;
 - provedores de IA, MCP e Context Builder em produção;
-- plugins e SDK público;
-- colaboração em tempo real, projetos remotos e marketplace;
-- agentes especializados, testes e documentação automáticos.
+- plugins e SDK;
+- colaboração, projetos remotos e marketplace;
+- agentes ajudando a modelar; testes nativos no app.
 
 ## Regra de promoção
 

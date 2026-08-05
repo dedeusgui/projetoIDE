@@ -79,11 +79,19 @@ com a menor solução que permita validar a experiência correspondente.
 
 ### Persistência e interoperabilidade
 
-**Proposta:** SQLite como armazenamento local transacional e JSON como formato
-de backup, exportação, importação, APIs e comunicação de plugins.
+**Proposta (alinhada à visão 0.5 / core):**
 
-**Não decidido:** representação interna, formato persistido, versionamento,
-modelo de migração, grafo, índices e estratégia de compatibilidade.
+- **JSON por Scope** = fonte de verdade versionável (git, diff, construção por
+  fatia).
+- **SQLite local** = índice/cache rebuildável (busca, travessia, contexto pra
+  agente, checagens) — **não** commitado como verdade do projeto.
+
+Proposta antiga “SQLite transacional + JSON só backup” fica **rebaixada**:
+inverte a autoridade e complica branch/merge. Ver
+[`modeling-core-0.5.md`](modeling-core-0.5.md).
+
+**Não decidido:** schema JSON, layout de pastas, quando introduzir SQLite na
+POC, migrações, FTS.
 
 ## Fluxos conceituais
 

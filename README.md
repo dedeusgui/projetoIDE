@@ -1,47 +1,53 @@
 # Living Model
 
-> Um ambiente para pensar, projetar e evoluir software a partir de um modelo
-> vivo — antes da implementação.
+> Um ambiente para modelar o sistema com clareza; o agente implementa a partir
+> desse modelo vivo. Código na mão é apoio, não o centro.
 
 ## Estado do projeto
 
 O projeto está em **discovery de produto**. Ainda não há stack, arquitetura
-técnica, modelo canônico, integração de IA ou MVP implementado. O propósito
-atual é reduzir incertezas sobre o problema, o público e a menor experiência
-capaz de validar a hipótese central.
+técnica, modelo canônico, integração de IA ou MVP implementado. A documentação
+está em **visão 0.5**: norte alinhado, core candidato e perguntas abertas —
+ainda sem validação com usuários.
 
 ## Ideia central
 
 O código descreve uma implementação. O sistema deve existir independentemente
-do código, em uma representação estruturada que pessoas e agentes de IA possam
-consultar, discutir e evoluir.
+do código, numa representação estruturada (grafo/JSON semântico) que pessoas e
+agentes usam — na visão, para **implementar** a partir do modelo, não só para
+ler contexto solto de chat.
 
-Leia o [manifesto](docs/product/manifesto.md) e o
-[contexto de produto](docs/product/product-context.md) antes de propor uma
-decisão ou alteração.
+Comece por:
+
+1. [Visão 0.5](docs/product/vision-0.5.md)
+2. [Manifesto](docs/product/manifesto.md)
+3. [Contexto de produto](docs/product/product-context.md)
 
 ## Como navegar
 
-- [Perguntas de research](docs/discovery/research-backlog.md): incertezas
-  priorizadas que precisam de evidência.
-- [Plano de validação](docs/discovery/validation-plan.md): experimentos e sinais
-  de decisão para as hipóteses atuais.
-- [Especificação de produto](docs/product/product-specification.md): hipótese,
-  experiência norteadora e critérios de avanço.
-- [Mapa de capabilities](docs/product/capability-map.md): recorte de discovery,
-  POC, MVP e pesquisa futura.
-- [Mapa de experiências](docs/product/experience-map.md): jornadas e telas
-  candidatas a validar.
-- [Contexto técnico proposto](docs/discovery/technical-context.md): tecnologias,
-  fluxos e limites ainda sob avaliação.
+- [Visão 0.5](docs/product/vision-0.5.md): o que o produto é / não é.
+- [Core de modelagem 0.5](docs/discovery/modeling-core-0.5.md): conceitos,
+  grafo/JSON, universal vs linguagem.
+- [Perguntas abertas](docs/discovery/open-questions-vision-0.5.md): drift,
+  branches, agente, valor.
+- [Notas de pesquisa 0.5](docs/discovery/research-notes-vision-0.5.md): SDD,
+  drift, cruzamento com o repo.
+- [Inventário 0.5](docs/discovery/vision-0.5-inventory.md): o que foi
+  mantido/corrigido.
+- [Perguntas de research](docs/discovery/research-backlog.md): incertezas P0+.
+- [Plano de validação](docs/discovery/validation-plan.md): experimentos.
+- [Especificação de produto](docs/product/product-specification.md): hipótese e
+  critérios de avanço.
+- [Mapa de capabilities](docs/product/capability-map.md): discovery / POC / MVP
+  candidatos.
+- [Mapa de experiências](docs/product/experience-map.md): **prematuro** (não
+  guia UX agora).
+- [Contexto técnico proposto](docs/discovery/technical-context.md): candidatos,
+  não stack adotada.
 - [System Representation](docs/discovery/system-representation-concept.md):
-  termo provisório e pesquisa de nomenclatura.
-- [ADR-0001](docs/architecture/adr/ADR-0001-governanca-de-conhecimento-e-decisoes.md):
-  como decisões e conhecimento serão versionados.
-- [Workflow de agentes](docs/agents/workflow.md): papéis, fases, gates e
-  artefatos de uma sessão.
-- [Instruções para agentes](AGENTS.md): ponto de entrada operacional para
-  qualquer pessoa ou agente que atuar no repositório.
+  termo provisório.
+- [ADR-0001](docs/architecture/adr/ADR-0001-governanca-de-conhecimento-e-decisoes.md)
+- [Workflow de agentes](docs/agents/workflow.md) · [AGENTS.md](AGENTS.md)
 
 ## Princípios de trabalho
 
@@ -51,9 +57,10 @@ decisão ou alteração.
 3. Pessoas mantêm a autoridade sobre decisões de produto e arquitetura.
 4. Evidências, decisões e riscos devem permanecer rastreáveis em arquivos.
 5. O escopo só cresce quando uma hipótese ou experimento justificar esse custo.
+6. Visão ≠ POC ≠ MVP.
 
 ## Próxima ação
 
-Abra a sessão-semente em
-[`docs/agents/sessions/2026-08-04-discovery-foundation/`](docs/agents/sessions/2026-08-04-discovery-foundation/)
-e escolha, com aprovação humana, a primeira pergunta de discovery a investigar.
+1. Product owner: confirmar ou ajustar a [visão 0.5](docs/product/vision-0.5.md).
+2. Escolher 1–2 perguntas abertas + RQ P0 e abrir sessão de research (ver
+   [`docs/discovery/next-session.md`](docs/discovery/next-session.md)).

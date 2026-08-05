@@ -5,6 +5,9 @@
 Este é um vocabulário para explorar significado. Não é um `SYSTEM_MODEL.md`
 canônico, schema, grafo, banco de dados, API ou taxonomia definitiva.
 
+**Síntese 0.5 (ler primeiro):** [`modeling-core-0.5.md`](modeling-core-0.5.md)
+— inclui Scope, Behavior, LanguageExtension e a direção grafo/JSON.
+
 ## Conceitos candidatos
 
 ### Project

@@ -1,26 +1,32 @@
 # Próxima sessão de discovery
 
+## Contexto pós visão 0.5
+
+A documentação de produto está em **0.5** ([visão](../product/vision-0.5.md),
+[core](modeling-core-0.5.md), [abertos](open-questions-vision-0.5.md),
+[pesquisa desk](research-notes-vision-0.5.md)). Isso **não** substitui
+entrevistas: ainda não há segmento validado.
+
 ## Objetivo
 
-Transformar a sessão-semente em uma investigação de problema com público e
-método explicitamente aprovados. A próxima sessão não deve iniciar pela escolha
-de tecnologia ou por uma interface de modelagem.
+Transformar a base 0.5 numa investigação de problema com público e método
+aprovados — **ou** num debate curto de política de drift (RQ-016) se o product
+owner priorizar fechar autoridade modelo↔código antes de campo.
+
+A próxima sessão não deve iniciar pela escolha de tecnologia ou por telas.
 
 ## Decisão humana necessária
 
-Escolher uma pergunta P0 para a primeira investigação:
+Escolher o foco da primeira investigação:
 
-1. identificar qual segmento sente o problema com maior intensidade
-   ([RQ-001](research-backlog.md#rq-001--qual-segmento-sente-o-problema-com-maior-intensidade));
-2. identificar qual trabalho perdido é caro o suficiente para justificar uma
-   nova prática ([RQ-002](research-backlog.md#rq-002--qual-trabalho-perdido-queremos-reduzir));
-3. validar se pessoas modelariam antes de implementar
-   ([RQ-003](research-backlog.md#rq-003--pessoas-modelariam-antes-de-implementar)).
+1. segmento que sente o problema ([RQ-001](research-backlog.md#rq-001--qual-segmento-sente-o-problema-com-maior-intensidade));
+2. trabalho perdido caro o suficiente ([RQ-002](research-backlog.md#rq-002--qual-trabalho-perdido-queremos-reduzir));
+3. aceitação de modelar antes ([RQ-003](research-backlog.md#rq-003--pessoas-modelariam-antes-de-implementar));
+4. **ou** política de drift/autoridade ([RQ-016](research-backlog.md)) — desk +
+   debate interno, não substitui usuários.
 
-Recomendação inicial: agrupar RQ-001 e RQ-002 em uma única investigação de
-entrevistas, porque não é possível avaliar aceitação de modelagem sem primeiro
-entender um problema concreto e recorrente. Esse agrupamento só pode avançar se
-o brief separar as evidências de cada pergunta e o approval autorizar ambas.
+Recomendação: agrupar RQ-001 e RQ-002 em entrevistas; tratar RQ-016 em paralelo
+só como nota de produto curta, sem travar campo.
 
 ## Pacote a preparar antes de approval
 

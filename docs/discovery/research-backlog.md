@@ -105,9 +105,28 @@ provedores de IA, estilos arquiteturais e pipelines.
 ### RQ-011 — Qual modelo de propriedade e colaboração é esperado?
 
 Verificar expectativas sobre arquivos locais, repositório, histórico,
-compartilhamento, permissões e abertura do formato.
+compartilhamento, permissões e abertura do formato. Inclui branches e merge
+da representação (Q-COLLAB-*).
 
 **Decisão desbloqueada:** direção de produto para dados e colaboração após MVP.
+
+## P1 — loop modelo ↔ código (visão 0.5)
+
+### RQ-016 — Qual política de autoridade evita drift mortal?
+
+Comparar spec-first, spec-anchored e spec-as-source com o fluxo desejado
+(modelar → agente implementa → revisar; editor de código como apoio).
+
+**Decisão desbloqueada:** regra de produto para divergência modelo/código
+(Q-LOOP-001/002; G-010/G-011).
+
+### RQ-017 — Em que nível a ferramenta precisa “acompanhar” o código?
+
+Nada / revisão manual / gates em PR / watch contínuo. Medir custo vs valor
+percebido no segmento escolhido.
+
+**Decisão desbloqueada:** escopo de integração código na primeira fase de
+produto que inclua implementação assistida.
 
 ## P2 — identidade e direção técnica
 
